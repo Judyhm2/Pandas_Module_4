@@ -1,7 +1,6 @@
-# Pandas_Module_4
+# SQL Lite and Pandas
 ## Overview of the statistical analysis:
-For the assignment I used Python, Pandas functions and methods, and SQLAlchemy, to filter the date column of the Measurements table in the hawaii.sqlite database to retrieve all the temperatures for the month of June and December. I then converted those temperatures to a list, create a DataFrame from the list, and generated the summary statistics.There were two deliverables as follows:
-
+For the assignment I used Python, Pandas functions and methods, and SQLAlchemy, to filter the date column of the Measurements table in the [hawaii.sqlite](https://github.com/Judyhm2/Pandas_Module_4/blob/main/surfs_up/hawaii.sqlite) database to retrieve all the temperatures for the month of June and December. I then converted those temperatures to a list, create a DataFrame from the list, and generated the summary statistics.There were two deliverables as follows:
 Deliverable 1: Determine the Summary Statistics for June
 Deliverable 2: Determine the Summary Statistics for December
 ## Results:
