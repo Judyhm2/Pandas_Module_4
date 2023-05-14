@@ -5,12 +5,13 @@ Deliverable 1: Determine the Summary Statistics for June
 Deliverable 2: Determine the Summary Statistics for December
 ## Results:
 ### Deliverable 1: Summary Statistics for June
-I imported the sqlalchemy extract function, from sqlalchemy import extract and import datetime as dt, to perform the a query that filters the Measurement table to retrieve the temperatures for the month of June.
-See file SurfUp_Challege file
-To filter the query through the Measurement table to retrieve the temperatures for the month of June, I used the variable start = dt.datetime(2017, 5, 31), started on the last day in May because it is exclued in the date value from June to start at the 1st day in June.I then placed the result in the variable results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= start).all()
-Convert the June temperatures to a list: I used a for loop to go through the iteration till 2017-06-30
-Create a DataFrame from the list of temperatures for the month of June: I used the variable(df_june) to store the dataframe aand named the columns. Code "df_june = pd.DataFrame(june_dates, columns=['Date','June Temps'])"
-To calculate and print out the summary statistics for the June temperature DataFrame, I used df_june.describe(). See image below 
+- I imported the sqlalchemy extract function, from sqlalchemy import extract and import datetime as dt, to perform the a query that filters the Measurement table to retrieve the temperatures for the month of June.
+See file [SurfUp_Challege](#) file
+- To filter the query through the Measurement table to retrieve the temperatures for the month of June, I used the variable start = dt.datetime(2017, 5, 31), started on the last day in May because it is exclued in the date value from June to start at the 1st day in June.I then placed the result in the variable results = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= start).all()
+- Convert the June temperatures to a list: I used a for loop to go through the iteration till 2017-06-30
+- Create a DataFrame from the list of temperatures for the month of June: I used the variable(df_june) to store the dataframe aand named the columns. Code "df_june = pd.DataFrame(june_dates, columns=['Date','June Temps'])"
+- To calculate and print out the summary statistics for the June temperature DataFrame, I used df_june.describe(). See image below 
+![](#)
 ### Deliverable 2: Summary Statistics for December
 See file SurfUp_Challege file
 The query that filters the Measurement table to retrieve the temperatures for the month of December was stored in variable resultsDec = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= start_Dec).all()
